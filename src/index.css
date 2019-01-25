@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "M PLUS Rounded 1c";
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.mainContents {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 35%;
+  background: radial-gradient(#7DD8FF 10%,#D4F2FF 40%,white 60%);
+  }
+
+.border {
+  border-bottom: dotted 2px gray;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.button {
+  border-style: none;
+  outline: none;
+  background: skyblue;
+  border-radius: 4px;
+  color: white;
+  border: solid 1px skyblue;
+}
+
+.form {
+  width: 200px;
+  border-radius: 4px;
+  outline: none;
+  border: solid 1px gray;
+  box-shadow: 0.5px 0.5px 1px gray;
+}
+
+.mainTitle {
+  display: inline-block;
+  width: 300px;
+  font-size: 45px;
+  text-align: center;
+  /* text-shadow: 1px 1px white; */
+  border-top: dotted 3px gray;
+  border-bottom: dotted 3px gray;
+  letter-spacing: 0.1em;
+  background: linear-gradient(45deg, skyblue, rgb(71, 133, 248), rgb(245, 255, 99));
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 600% 600%;
+  color: transparent;
+  animation: backgroundcolor 8s ease infinite;
+  -webkit-animation: backgroundcolor 8s ease infinite;
+}
+
+@keyframes backgroundcolor {
+  0%{background-position:0% 50%}
+  50%{background-position: 100% 50%}
+  100%{background-position: 0% 50%}
+}
+
+@media screen and (max-width: 960px) {
+  .mainContents {
+    margin: 0;
+    width: 100%;
+  }
+  .border {
+    width: 70%;
+    margin: 15px auto;
+  }
+  .button {
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+  }
+  .form {
+    width: 60%;
+    height: 2em;
+    border-bottom: solid 2px gray;
+  }
+  
+}
